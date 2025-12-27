@@ -1,0 +1,12 @@
+-- 3) Determine the top 3 most ordered pizza types based on revenue for each pizza category
+SELECT name, revenue FROM
+(SELECT category,name,revenue, rank() OVER (partition by category order by revenue desc) AS rn
+FROM
+(SELECT pizza_types.category, pizza_types.name,
+SUM((orders_details.quantity) * pizzas.price) as revenue
+FROM pizza_types JOIN pizzas
+ON pizza_types.pizza_type_id = pizzas.pizza_type_id
+JOIN orders_details
+ON orders_details.pizza_id= pizzas.pizza_id
+Group by pizza_types.category, pizza_types.name) AS a) AS B
+WHERE rn <= 3;
