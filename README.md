@@ -63,7 +63,7 @@ These tables are joined as needed using primary and foreign keys to answer the b
 ---
 
 ## Project Structure
-
+```
 Pizza_Sales_Analysis_MySQL/
 │
 |--sql_queries/ # All SQL queries used in the analysis
@@ -72,7 +72,7 @@ Pizza_Sales_Analysis_MySQL/
 |--README.md # Project documentation
 |-- insights.md # Detailed analytical insights
 
-
+```
 
 ---
 
