@@ -1,3 +1,7 @@
+![pizzahut final](https://github.com/user-attachments/assets/4b33ca3f-9c0f-4a0f-aa3a-3d9173145528)
+
+
+
 # 🍕 Pizza Sales Analysis using MySQL
 
 ## Executive Summary
